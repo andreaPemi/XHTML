@@ -1,0 +1,64 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+ 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Ejercicio 15 Formulario con controles de tipo lista desplegable</title>
+		
+	</head>
+ 
+	<body>
+		<h2>Rellena tu CV</h2>
+ 		<form id="formulario" method="post" action="nisu.php">
+ 			<fieldset>
+ 				<legend>Datos personales</legend>
+ 				<label for="provincia">Provincia</label><br/>
+ 				<select id="provincia" name="provincia">
+			  		<option value="" selected="selected">- selecciona -</option>
+			  		<option value="huelva">Huelva</option>
+			  		<option value="sevilla">Sevilla</option>
+			  		<option value="alava">Alava</option>
+			  		<option value="cadiz">Cadiz</option>
+				</select><br/>
+				<label for="fecha_dia">Fecha de nacimiento</label><br/>
+				<input type="text" name="fecha_dia" size="2" maxlength="2">
+				<label>de</label>
+				<select id="fecha_mes" name="fecha_mes">
+			  		<option value="enero" selected="selected">Enero</option>
+			  		<option value="febrero">Febrero</option>
+			  		<option value="marzo">Marzo</option>
+			  		<option value="abril">Abril</option>
+			  		<option value="mayo">Mayo</option>
+			  		<option value="junio">Junio</option>
+			  		<option value="julio">Julio</option>
+			  		<option value="agosto">Agosto</option>
+			  		<option value="septiembre">Septiembre</option>
+			  		<option value="octubre">Octubre</option>
+			  		<option value="noviembre">Noviembre</option>
+			  		<option value="diciembre">Diciembre</option>			  	
+				</select>
+				<label>de</label>
+				<input type="text" size="5" maxlength="4" id="fecha_ano" name="fecha_ano"><br/>
+				<label for="temasDeInteres">Temas de interés</label> <br/>
+			  	<select multiple="multiple" size="5" id="temasDeInteres" name="temasDeInteres">
+				    <option value="1">Administración de bases de datos</option>
+				    <option value="2">Análisis y programación</option>
+				    <option value="3">Arquitectura</option>
+				    <option value="4">Calidad</option>
+				    <option value="5">ERP, CRM, Business Intelligence</option>
+				    <option value="36">programción</option>
+				    <option value="7">Ciberseguridad</option>
+				    <option value="8">Sistemas informaticos</option>
+				    <option value="9">Redes</option>
+				    <option value="10">inglés técnico</option>
+			    </select>
+ 			</fieldset>	
+ 		</form>
+ 		
+		
+		
+	</body>
+ 	
+</html>
+ 

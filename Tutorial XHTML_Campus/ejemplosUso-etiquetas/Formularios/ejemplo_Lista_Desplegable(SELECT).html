@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>Ejemplo textarea</title>
+	</head>
+	<body>
+ 
+		<h1>Uso de la etiqueta <code><</code>select<code>></code></h1>
+	 	<form>
+	 		<h3>sólo muestran un valor cada vez y sólo permiten seleccionar un valor</h3>
+			<label for="so">Sistema operativo</label> <br/>
+			<select id="so" name="so">
+			  <option value="" selected="selected">- selecciona -</option>
+			  <option value="windows">Windows</option>
+			  <option value="mac">Mac</option>
+			  <option value="linux">Linux</option>
+			  <option value="otro">Otro</option>
+			</select>
+			 
+			 <h3>sólo permite seleccionar un valor pero muestra varios a la vez</h3>
+			<label for="so2">Sistema operativo</label> <br/>
+			<select id="so2" name="so2" size="5">
+			  <option value="windows" selected="selected">Windows</option>
+			  <option value="mac">Mac</option>
+			  <option value="linux">Linux</option>
+			  <option value="otro">Otro</option>
+			</select>
+			 
+			 <h3>muestra varios valores y permite realizar selecciones múltiples</h3>
+			<label for="so3">Sistema operativo</label> <br/>
+			<select id="so3" name="so3" size="5" multiple="multiple">
+			  <option value="windows" selected="selected">Windows</option>
+			  <option value="mac">Mac</option>
+			  <option value="linux">Linux</option>
+			  <option value="otro">Otro</option>
+			</select>
+
+			<blockquote>
+				La etiqueta <code><</code>select<code>></code> define la lista y encierra todas las opciones que muestra la lista. Cada una de las opciones de la lista se define mediante una etiqueta <code><</code>option<code>></code>. El atributo value de cada opción es obligatorio, ya que es el dato que se envía al servidor cuando el usuario envía el formulario. Para seleccionar por defecto una opción al mostrar la lista, se añade el atributo selected a la opción deseada.
+			</blockquote>
+		</form>
+		<p>******************************************************************************</p>
+
+		<h2>Ejemplo de uso de la etiqueta optgroup que permite agrupar opciones relacionadas dentro de una lista desplegable</h2>
+		<form id="formulario" method="post" action=""> 
+			<label for="programa">Programa seleccionado</label> <br/>
+			<select id="programa" name="programa">
+			  <optgroup label="Sistemas Operativos">
+			    <option value="Windows" selected="selected">Windows</option>
+			    <option value="Mac">Mac</option>
+			    <option value="Linux">Linux</option>
+			    <option value="Other">Otro</option>
+			  </optgroup>
+			  <optgroup label="Navegadores">
+			    <option value="Internet Explorer" selected="selected">Internet Explorer</option>
+			    <option value="Firefox">Firefox</option>
+			    <option value="Safari">Safari</option>
+			    <option value="Opera">Opera</option>
+			    <option value="Other">Otro</option>
+			  </optgroup>
+			</select>		 
+		</form>
+		<blockquote>
+			El único atributo que suele utilizarse con la etiqueta <code><</code>optgroup<code>></code> es label, que indica el nombre de cada agrupación. Los navegadores muestran de forma destacada el título de cada agrupación, de forma que el usuario pueda localizar más fácilmente la opción deseada.
+		</blockquote>
+
+	</body>
+</html>

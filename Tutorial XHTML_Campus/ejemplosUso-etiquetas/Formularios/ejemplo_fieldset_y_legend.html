@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Ejemplo de formulario sencillo</title>
+	</head>
+	<body>
+ 
+		<h1>Uso de la etiqueta <code><</code>fieldset<code>></code> y <code><</code>legend<code>></code></h1>
+ 
+		<form action="maneja_formulario.php" method="post">
+		  <fieldset>
+		    <legend>Datos personales</legend>
+		    <label for="nombre">Nombre</label> <br/>
+			<input type="text" id="nombre" name="nombre" value="" />
+			 <br/>
+			<label for="apellidos">Apellidos</label> <br/>
+			<input type="text" id="apellidos" name="apellidos" value="" />
+			 <br/>
+			<label for="dni">DNI</label> <br/>
+			<input type="text" id="dni" name="dni" value="" size="10" maxlength="9" />
+		  </fieldset>
+		 
+		  <fieldset>
+		    <legend>Datos de conexión</legend>
+		    <label for="nombre">Nombre de usuario</label><br/>
+		    <input type="text" name="nombre" value="" maxlength="10" />
+		    <br/>
+		    <label for="password">Contraseña</label><br/>
+		    <input type="password" name="password" value="" maxlength="10" />
+		    <br/>
+		    <label for="password2">Repite la contraseña</label><br/>
+		    <input type="password" name="password2" value="" maxlength="10" />
+		  </fieldset>
+		</form>
+ 
+ 		<blockquote>
+ 			La etiqueta <strong><code><</code>fieldset<code>></code> agrupa todos los controles de formulario a los que encierra</strong>. El navegador muestra por defecto un borde resaltado para cada agrupación. La etiqueta <code><</code>legend<code>></code> se incluye dentro de cada etiqueta <strong><code><</code>fieldset<code>></code> y establece el título que muestra el navegador para cada agrupación de elementos.</strong></bloquote>
+
+ 		<blockquote>
+ 			La principal ventaja de utilizar <strong><code><</code>label<code>></code> </strong>es que el código HTML está mejor estructurado y se mejora su accesibilidad. Además, al pinchar sobre el texto del <strong><code><</code>label<code>></code></strong>, el puntero del ratón se posiciona automáticamente para poder escribir sobre el campo de formulario asociado. Este comportamiento es especialmente útil para los campos de tipo radiobutton y checkbox.
+ 		</blockquote>	
+	</body>
+</html>

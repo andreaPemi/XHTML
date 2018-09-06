@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Ejemplo textarea</title>
+	</head>
+	<body>
+ 
+		<h1>Uso de la etiqueta <code><</code>textarea<code>></code></h1>
+ 
+		<form action="insertar_producto.php" method="post"> 
+			<label for="nombre">Nombre del producto</label> <br/>
+			<input type="text" id="nombre" name="nombre" value="" />
+			<br/>			 
+			<label for="descripcion">Descripción del producto</label> <br/>
+			<textarea id="descripcion" name="descripcion" cols="40" rows="5"></textarea>
+		</form>
+ 		<blockquote>
+ 			Las áreas de texto son útiles cuando se debe introducir una gran cantidad de texto
+ 		</bloquote>
+
+ 		<blockquote>
+ 			Los atributos más utilizados en las etiquetas <code><</code>textarea<code>></code> son los que controlan su anchura y altura. <strong>La anchura del área de texto se controla mediante el atributo cols, que indica las columnas o número de caracteres que se podrán escribir como máximo en cada fila. La altura del área de texto se controla mediante rows, que indica directamente las filas de texto que serán visibles.</strong>
+ 		</blockquote>	
+ 		<blockquote>
+ 			El principal inconveniente de los elementos <code><</code>textarea<code>></code> es que el lenguaje HTML<strong> no permite limitar el número máximo de caracteres que se pueden introducir</strong>. Mientras los elementos <code><</code>input type="text"<code>></code> disponen del atributo maxlength, las áreas de texto no disponen de un atributo equivalente, <strong>por lo que sólo es posible limitar el número de caracteres mediante su programación con JavaScript.</strong>
+ 		</blockquote>
+	</body>
+</html>

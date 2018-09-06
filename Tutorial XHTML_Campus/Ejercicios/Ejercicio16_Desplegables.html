@@ -1,0 +1,48 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+ 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Ejercicio 16 Formulario</title>
+		
+	</head>
+ 
+	<body>
+		<h2>Información sobre el producto</h2>
+ 		<form id="formulario" method="post" action="nisu.php">
+ 			<fieldset>
+ 				<legend>Datos básicos</legend>
+ 				<label for="nombre">Nombre</label><br/>
+ 				<input type="text" name="nombre"><br/>
+				<label for="descripcion">Descripción</label><br/>
+				<textarea id="descripcion" name="descripcion" cols="40" rows="5"></textarea><br>
+				<label for="foto">Foto</label>
+				<input type="file" name="foto"><br/>	
+				<input type="checkbox" name="cont_visita" >Añadir contador de visitas
+ 			</fieldset>	
+ 			<fieldset>
+ 				<legend>Datos económicos</legend>
+ 				<label for="precio">Precio</label>
+ 				<input type="precio" name="precio">
+ 				<label>€</label> 				
+				<label for="impuesto">Impuestos</label>
+				<select id="impuesto" name="impuesto">
+				    <option value="1">4%</option>
+				    <option value="2">7%</option>
+				    <option value="3">16%</option>
+				    <option value="4">25%</option>				    
+			    </select><br/>	
+				<label for="promocion">Promoción</label><br/>
+				<input type="radio" name="promocion" value="ninguno" checked="checked">Ninguno<br/>
+				<input type="radio" name="promocion" value="portes">Transporte gratuito<br/>
+				<input type="radio" name="promocion" value="descuento">Descuento 5%<br/>
+ 			</fieldset>	
+ 		</form>
+ 		
+		
+		
+	</body>
+ 	
+</html>
+ 
